@@ -49,8 +49,6 @@ async function fetchCruxForUrls(urls = []) {
     data: data
   };
 
-  debugger;
-
   const res = await axios.request(config);
 
   if (res.status === 200 && res.data) {
