@@ -152,7 +152,7 @@ function TableCellVisible({ children, visible = true }) {
   if (!visible) return null;
   return (
     <TableCell>
-      {children}
+      {children || "-"}
     </TableCell>
   );
 }
