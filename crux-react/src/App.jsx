@@ -249,6 +249,8 @@ export default function App() {
   async function handleSearch() {
     setLoading(true);
     setError(null);
+    setComparator(">=");
+    setThreshold(0);
     try {
       const results = await fetchCruxForUrls(parsedUrls);
       setData(results);
