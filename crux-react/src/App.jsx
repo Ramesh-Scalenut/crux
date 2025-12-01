@@ -56,7 +56,7 @@ async function fetchCruxForUrls(urls = []) {
     return res.data;
 
   } else {
-    throw new Error('Failed to fetch CRUX data');
+    throw new Error('Failed to fetch CrUX data');
   }
 
 
@@ -256,7 +256,7 @@ export default function App() {
       setData(results);
     } catch (err) {
       console.error(err);
-      setError("Failed to fetch CRUX data. Please try again.");
+      setError("Failed to fetch CrUX data. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -331,7 +331,7 @@ export default function App() {
     <Container maxWidth="md" sx={{ py: 6, width: "800px" }}>
       <Paper sx={{ p: 4 }} elevation={3}>
         <Typography variant="h4" component="h1" textAlign={"center"} gutterBottom>
-          CRUX Data
+          CrUX Data
         </Typography>
 
         <Stack spacing={2} direction={{ xs: "column", sm: "row" }} alignItems="flex-start" sx={{ mt: 2 }}>
